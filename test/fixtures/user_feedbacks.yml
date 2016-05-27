@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mobile_number: MyString
+  current_brand: MyString
+  current_variant: MyString
+  other_brand: MyString
+  other_variant: MyString
+  no_of_sticks: 1
+  reason_cb: MyString
+  reason_cv: MyString
+  reason_ob: MyString
+  reason_ov: MyString
+  reason_sticks: MyString
+
+two:
+  mobile_number: MyString
+  current_brand: MyString
+  current_variant: MyString
+  other_brand: MyString
+  other_variant: MyString
+  no_of_sticks: 1
+  reason_cb: MyString
+  reason_cv: MyString
+  reason_ob: MyString
+  reason_ov: MyString
+  reason_sticks: MyString

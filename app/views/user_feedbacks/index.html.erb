@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Feedbacks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mobile number</th>
+      <th>Current brand</th>
+      <th>Current variant</th>
+      <th>Other brand</th>
+      <th>Other variant</th>
+      <th>No of sticks</th>
+      <th>Reason cb</th>
+      <th>Reason cv</th>
+      <th>Reason ob</th>
+      <th>Reason ov</th>
+      <th>Reason sticks</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_feedbacks.each do |user_feedback| %>
+      <tr>
+        <td><%= user_feedback.mobile_number %></td>
+        <td><%= user_feedback.current_brand %></td>
+        <td><%= user_feedback.current_variant %></td>
+        <td><%= user_feedback.other_brand %></td>
+        <td><%= user_feedback.other_variant %></td>
+        <td><%= user_feedback.no_of_sticks %></td>
+        <td><%= user_feedback.reason_cb %></td>
+        <td><%= user_feedback.reason_cv %></td>
+        <td><%= user_feedback.reason_ob %></td>
+        <td><%= user_feedback.reason_ov %></td>
+        <td><%= user_feedback.reason_sticks %></td>
+        <td><%= link_to 'Show', user_feedback %></td>
+        <td><%= link_to 'Edit', edit_user_feedback_path(user_feedback) %></td>
+        <td><%= link_to 'Destroy', user_feedback, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User feedback', new_user_feedback_path %>

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @user_feedback.mobile_number %>
+</p>
+
+<p>
+  <strong>Current brand:</strong>
+  <%= @user_feedback.current_brand %>
+</p>
+
+<p>
+  <strong>Current variant:</strong>
+  <%= @user_feedback.current_variant %>
+</p>
+
+<p>
+  <strong>Other brand:</strong>
+  <%= @user_feedback.other_brand %>
+</p>
+
+<p>
+  <strong>Other variant:</strong>
+  <%= @user_feedback.other_variant %>
+</p>
+
+<p>
+  <strong>No of sticks:</strong>
+  <%= @user_feedback.no_of_sticks %>
+</p>
+
+<p>
+  <strong>Reason cb:</strong>
+  <%= @user_feedback.reason_cb %>
+</p>
+
+<p>
+  <strong>Reason cv:</strong>
+  <%= @user_feedback.reason_cv %>
+</p>
+
+<p>
+  <strong>Reason ob:</strong>
+  <%= @user_feedback.reason_ob %>
+</p>
+
+<p>
+  <strong>Reason ov:</strong>
+  <%= @user_feedback.reason_ov %>
+</p>
+
+<p>
+  <strong>Reason sticks:</strong>
+  <%= @user_feedback.reason_sticks %>
+</p>
+
+<%= link_to 'Edit', edit_user_feedback_path(@user_feedback) %> |
+<%= link_to 'Back', user_feedbacks_path %>

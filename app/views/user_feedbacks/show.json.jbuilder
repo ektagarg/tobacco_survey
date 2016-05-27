@@ -1,0 +1,1 @@
+json.extract! @user_feedback, :id, :mobile_number, :current_brand, :current_variant, :other_brand, :other_variant, :no_of_sticks, :reason_cb, :reason_cv, :reason_ob, :reason_ov, :reason_sticks, :created_at, :updated_at

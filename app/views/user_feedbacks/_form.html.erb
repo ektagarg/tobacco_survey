@@ -1,0 +1,61 @@
+<%= form_for(@user_feedback) do |f| %>
+  <% if @user_feedback.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_feedback.errors.count, "error") %> prohibited this user_feedback from being saved:</h2>
+
+      <ul>
+      <% @user_feedback.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mobile_number %><br>
+    <%= f.text_field :mobile_number %>
+  </div>
+  <div class="field">
+    <%= f.label :current_brand %><br>
+    <%= f.text_field :current_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :current_variant %><br>
+    <%= f.text_field :current_variant %>
+  </div>
+  <div class="field">
+    <%= f.label :other_brand %><br>
+    <%= f.text_field :other_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :other_variant %><br>
+    <%= f.text_field :other_variant %>
+  </div>
+  <div class="field">
+    <%= f.label :no_of_sticks %><br>
+    <%= f.number_field :no_of_sticks %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_cb %><br>
+    <%= f.text_field :reason_cb %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_cv %><br>
+    <%= f.text_field :reason_cv %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_ob %><br>
+    <%= f.text_field :reason_ob %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_ov %><br>
+    <%= f.text_field :reason_ov %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_sticks %><br>
+    <%= f.text_field :reason_sticks %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
