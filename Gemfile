@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2'
-gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,6 +23,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'rails_12factor', group: :production
 gem 'pg'
 
 # Use ActiveModel has_secure_password
