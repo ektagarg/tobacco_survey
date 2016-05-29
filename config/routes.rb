@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :user_feedbacks do
   collection do
-      get 'feedback'
+      get 'last_feedback'
+      post 'feedback'
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
